@@ -7,7 +7,7 @@ var mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost:27017/shoes-app');
 
-var routes = require('./config/');
+var routes = require('./config/routes');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
